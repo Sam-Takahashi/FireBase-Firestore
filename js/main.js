@@ -8,7 +8,7 @@ function renderCafe(doc) {
     let city = document.createElement('span');
     let kill = document.createElement('div');
     // doc.id is the auto-generated id firestore created for my documents
-    li.setAttribute('data.id', doc.id);
+    li.setAttribute('data-id', doc.id);
     name.textContent = doc.data().name;
     city.textContent = doc.data().city;
     kill.textContent = 'Delete';
